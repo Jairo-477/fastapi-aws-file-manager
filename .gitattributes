@@ -1,0 +1,3 @@
+# Normaliza los saltos de línea a LF en el repositorio y en el working copy,
+# para que scripts .sh, Dockerfile y user_data no lleguen con CRLF a Linux
+* text=auto eol=lf
