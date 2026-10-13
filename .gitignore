@@ -1,0 +1,42 @@
+# --- Secretos y credenciales ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+
+# --- Entornos virtuales y caché de Python ---
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# --- Terraform (el estado puede contener secretos, p. ej. la contraseña de RDS) ---
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+*.tfvars.json
+crash.log
+# .terraform.lock.hcl SÍ se versiona (fija las versiones de los providers)
+
+# --- Bases de datos locales ---
+*.sqlite
+*.sqlite3
+*.db
+
+# --- Notas internas (no son parte del repositorio) ---
+HOJA_DE_RUTA.md
+progreso_fastapi_aws*.md
+
+# --- Editor, sistema operativo y herramientas locales ---
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
